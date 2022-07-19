@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+	<a href="https://cursos.alura.com.br/course/logica-programacao-javascript-html/task/22461">Exercicio do curso</a>
+	<br><br>
+
+<script>
+
+    function puloLinha() {
+        document.write("<br><hr><br>");
+       }
+
+    function imprime(mostra) {
+
+        document.write(mostra);
+        puloLinha();
+       }
+
+    function sorteia(numero) {
+    	return Math.round(Math.random() * numero)
+    }
+
+    var numeroPensado = sorteia(10);
+    var chute = parseInt(prompt("Digite seu chute!"));
+
+    if(chute == numeroPensado) {
+    	imprime("Você Acertou")
+    } 
+    if(chute > numeroPensado){
+    	imprime("Você errou, o numero pensado era maior. ");
+    } else {
+    	imprime("Você errou, o numero pensado era menor. ");
+    }
+
+   
+
+</script>

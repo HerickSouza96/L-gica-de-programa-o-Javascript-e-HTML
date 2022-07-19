@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function puloLinha(){
+        document.write ("<br>");
+    }
+
+    function imprime(mostrar) {
+        document.write(mostrar)
+        puloLinha();
+    }
+
+	var ano = 2022;
+	var idadeHerick  = (ano - 1996);
+    var idadeMayk    = (ano - 1993);
+    var idadeJackson = (ano - 1989);
+    
+
+    imprime("Herick tem "  + idadeHerick  + " anos");
+    imprime("Mayk tem "    + idadeMayk    + " anos");
+    imprime("Jackson tem " + idadeJackson + " anos");
+
+    var media = (idadeHerick + idadeMayk + idadeJackson)/3;
+    puloLinha();
+    
+	imprime('A média das idades é ' + Math.round(media));
+</script>

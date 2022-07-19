@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+	<a href="https://cursos.alura.com.br/course/logica-programacao-javascript-html/task/17702">Exercicio do curso:</a>
+    <br><br>
+
+<script>
+
+	function puloLinha() {
+		document.write("<br>");
+	}
+
+	function imprime(mostrar) {
+		document.write(mostrar);
+		puloLinha();
+	}
+
+	var anoInicial = 1500;
+	var anoAtual = 2022;
+	var geracoesQuePassou = anoAtual - anoInicial;
+	var IdadeMediaQuandoTemFilhos = 28
+
+	imprime("Se passaram " + Math.round(geracoesQuePassou / IdadeMediaQuandoTemFilhos) + " gerações.");
+
+</script>
